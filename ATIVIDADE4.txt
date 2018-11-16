@@ -1,0 +1,23 @@
+.data
+A:0
+B:0
+C:0
+D:0
+E:0
+.text
+LDI  5  #ACC = 5
+STO  A  #(A) = ACC
+LDI  7  #ACC = 7
+ADDI 9  #ACC = ACC + 9
+STO  B  #(B) = ACC
+LD   C  #(C) = ACC
+ADD  A  #ACC = ACC + (A)
+ADDI 8  #ACC = ACC + 8
+SUBI 9  #ACC = ACC - 9
+SUBI 19 #ACC = ACC - 19
+ADD  E  #ACC = ACC = (E)
+STO  B  #(B) = ACC
+LDI  7  #ACC = 7
+ADD  A  #ACC = ACC + (A)
+SUB  C  #ACC = ACC - (C)
+ADD  B  #ACC = ACC + (B)
